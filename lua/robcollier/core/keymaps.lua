@@ -54,3 +54,5 @@ function EscapePair()
 end
 
 keymap.set("i", "<C-l>", "<cmd>lua EscapePair()<CR>", { noremap = true, silent = true })
+-- Git
+keymap.set("n", "<leader>gg", "<cmd>LazyGitCurrentFile<CR>")
