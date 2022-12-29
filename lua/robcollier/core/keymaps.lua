@@ -8,14 +8,15 @@ keymap.set("n", "<leader>ww", ":w<CR>") -- Save
 keymap.set("n", "<leader>wq", ":wq<CR>") -- Save & Quit
 keymap.set("n", "<leader>q", ":q!<CR>") -- Save & Quit
 keymap.set("n", "x", '"_x') -- dont save small deletes to the register
+keymap.set("n", "<leader><Tab>", ":e#<CR>")
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 -- Telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
+keymap.set("n", "<leader>p", "<cmd>Telescope find_files<CR>")
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>")
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>")
-keymap.set("n", "<leader>bb", "<cmd>Telescope buffers<CR>")
-keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>")
+keymap.set("n", "<leader>b", "<cmd>Telescope buffers<CR>")
+keymap.set("n", "<leader>h", "<cmd>Telescope help_tags<CR>")
 
 keymap.set("n", "<leader>gs", "<cmd>Telescope lsp_document_symbols<CR>")
 keymap.set("n", "<leader>gf", "<cmd>Telescope lsp_dynamic_workspace_symbols<CR>")
