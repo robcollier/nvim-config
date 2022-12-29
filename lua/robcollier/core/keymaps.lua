@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
 
-keymap.set("n", "<leader>;", ":")
+keymap.set("n", "<leader> ", ":")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "<leader>ww", ":w<CR>") -- Save
 keymap.set("n", "<leader>wq", ":wq<CR>") -- Save & Quit
@@ -13,7 +13,7 @@ keymap.set("n", "<leader><Tab>", ":e#<CR>")
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 -- Telescope
 keymap.set("n", "<leader>p", "<cmd>Telescope find_files<CR>")
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
+keymap.set("n", "<leader>ff", "<cmd>Telescope git_files<CR>")
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>")
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>")
 keymap.set("n", "<leader>b", "<cmd>Telescope buffers<CR>")
