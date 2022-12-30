@@ -5,9 +5,11 @@ opt.relativenumber = true
 opt.number = true
 -- tabs & indentation
 opt.tabstop = 4
-opt.shiftwidth = 0
+opt.softtabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
-opt.autoindent =  true
+opt.autoindent = true
+opt.smartindent = true
 -- line wrapping
 opt.wrap = false
 -- searching
@@ -15,20 +17,22 @@ opt.ignorecase = true
 opt.smartcase = true
 -- appearance
 opt.termguicolors = true
-opt.background = 'dark'
-opt.signcolumn = 'yes'
+opt.background = "dark"
+opt.signcolumn = "yes"
 -- backspace
-opt.backspace = 'indent,eol,start'
+opt.backspace = "indent,eol,start"
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
 -- misc
-opt.iskeyword:append('-')
-vim.opt.swapfile = false      -- Do not leave any backup files
-vim.opt.mouse="i"             -- Enable mouse on insert mode
-vim.opt.showmatch  = true     -- Highlights the matching parenthesis
-vim.opt.hidden = true         -- Allow multple buffers
-vim.opt.updatetime = 750      -- I have a modern machine. No need to wait that long
-vim.opt.shortmess:append("c") -- Don't pass messages to |ins-completion-menu|.
-vim.opt.encoding = "utf-8"    -- Just in case
-vim.opt.cmdheight=1
+opt.iskeyword:append("-")
+opt.swapfile = false -- Do not leave any backup files
+opt.mouse = "a" -- Enable mouse on insert mode
+opt.showmatch = true -- Highlights the matching parenthesis
+opt.hidden = true -- Allow multple buffers
+opt.updatetime = 750 -- I have a modern machine. No need to wait that long
+opt.shortmess:append("c") -- Don't pass messages to |ins-completion-menu|.
+opt.encoding = "utf-8" -- Just in case
+opt.cmdheight = 1
+opt.wildmode = "longest:full,full"
+opt.title = true
