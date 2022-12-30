@@ -14,6 +14,7 @@ opt.wrap = false
 -- searching
 opt.ignorecase = true
 opt.smartcase = true
+opt.incsearch = true
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"
@@ -26,10 +27,11 @@ opt.splitbelow = true
 -- misc
 opt.iskeyword:append("-")
 opt.swapfile = false -- Do not leave any backup files
+opt.backup = false
 opt.mouse = "a" -- Enable mouse on insert mode
 opt.showmatch = true -- Highlights the matching parenthesis
 opt.hidden = true -- Allow multple buffers
-opt.updatetime = 750 -- I have a modern machine. No need to wait that long
+opt.updatetime = 50 -- I have a modern machine. No need to wait that long
 opt.shortmess:append("c") -- Don't pass messages to |ins-completion-menu|.
 opt.encoding = "utf-8" -- Just in case
 opt.cmdheight = 1
@@ -38,4 +40,6 @@ opt.title = true
 opt.scrolloff = 8
 opt.sidescrolloff = 8
 opt.confirm = true
+-- undo
 opt.undofile = true
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"

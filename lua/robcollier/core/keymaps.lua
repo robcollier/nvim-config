@@ -12,8 +12,8 @@ keymap.set("n", "<leader><Tab>", ":e#<CR>")
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 -- Telescope
-keymap.set("n", "<leader>p", "<cmd>Telescope find_files<CR>")
-keymap.set("n", "<leader>ff", "<cmd>Telescope git_files<CR>")
+keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
+keymap.set("n", "<leader>fg", "<cmd>Telescope git_files<CR>")
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>")
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>")
 keymap.set("n", "<leader>b", "<cmd>Telescope buffers<CR>")
@@ -28,8 +28,8 @@ keymap.set("n", "<leader>sr", "<cmd>Telescope registers<CR>")
 -- Keep search matches in the middle of the window
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
--- Open NetRW to the left
---keymap.set("n", "<leader>e", ":Lex 30<Cr>")
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
 -- Reload nvim config
 keymap.set("n", "<leader>r", "source $MYVIMRC<CR>")
 -- tab out of autopairs
@@ -58,3 +58,14 @@ end
 keymap.set("i", "<C-l>", "<cmd>lua EscapePair()<CR>", { noremap = true, silent = true })
 -- Git
 keymap.set("n", "<leader>gg", "<cmd>LazyGitCurrentFile<CR>")
+-- from the primagen
+-- greatest remap ever
+keymap.set("x", "<leader>p", [["_dP]])
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+keymap.set("n", "J", "mzJ`z")
+-- next greatest remap ever : asbjornHaland
+keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+keymap.set("n", "<leader>Y", [["+Y]])
+keymap.set({ "n", "v" }, "<leader>d", [["_d]])
+keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
