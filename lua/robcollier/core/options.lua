@@ -1,5 +1,4 @@
 local opt = vim.opt -- for conciseness
-
 -- line numbers
 opt.relativenumber = true
 opt.number = true
@@ -36,3 +35,7 @@ opt.encoding = "utf-8" -- Just in case
 opt.cmdheight = 1
 opt.wildmode = "longest:full,full"
 opt.title = true
+opt.scrolloff = 8
+opt.sidescrolloff = 8
+opt.confirm = true
+opt.undofile = true
