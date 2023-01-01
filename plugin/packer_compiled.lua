@@ -216,6 +216,16 @@ _G.packer_plugins = {
     path = "/Users/rcollier/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  undotree = {
+    loaded = true,
+    path = "/Users/rcollier/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-blade"] = {
+    loaded = true,
+    path = "/Users/rcollier/.local/share/nvim/site/pack/packer/start/vim-blade",
+    url = "https://github.com/jwalton512/vim-blade"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/rcollier/.local/share/nvim/site/pack/packer/start/vim-surround",

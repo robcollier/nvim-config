@@ -77,6 +77,7 @@ return packer.startup(function(use)
 	use("kdheepak/lazygit.nvim") -- integrate lazygit
 	-- misc
 	use("mbbill/undotree")
+	use("jwalton512/vim-blade")
 	-- end plugins
 	if packer_bootstrap then
 		require("packer").sync()
